@@ -25,15 +25,16 @@ $this->extend('Layouts/default'); ?>
 
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="max-w-4xl mx-auto text-center">
-            <a href="https://github.com/cojocaru-david/tailCi" target="_blank"
-                class="inline-flex items-center justify-center px-4 py-2 rounded-full bg-orange-100 dark:bg-orange-900/40 text-orange-600 dark:text-orange-400 mb-6 text-sm font-medium">
+            <a href="https://github.com/cojocaru-david/tailCi" target="_blank" role="link"
+                aria-label="TailCI Repository"
+                class="inline-flex items-center justify-center px-4 py-2 rounded-full bg-orange-100 dark:bg-orange-900/40 text-orange-600 dark:text-orange-500 mb-6 text-sm font-medium">
                 <span>Version <?= $version ?></span>
                 <span class="ml-2 bg-orange-200 dark:bg-orange-800 px-2 py-0.5 rounded-full text-xs">NEW</span>
                 <i class="fa fa-arrow-right ml-2"></i>
             </a>
 
             <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-800 dark:text-neutral-100 mb-6">
-                Modern Web Development with <span class="text-orange-500 underline relative">
+                Modern Web Development with <span class="text-orange-600 underline relative">
                     TailCI
                 </span>
             </h1>
@@ -45,11 +46,12 @@ $this->extend('Layouts/default'); ?>
 
             <div class="flex flex-col sm:flex-row justify-center gap-4">
                 <a href="https://github.com/cojocaru-david/tailCi/tree/master?tab=readme-ov-file#installation"
-                    class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-orange-500 hover:bg-orange-600 transition duration-200 shadow-lg hover:shadow-xl">
+                    target="_blank" role="link" aria-label="TailCI Repository"
+                    class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-orange-600 hover:bg-orange-600 transition duration-200 shadow-lg hover:shadow-xl">
                     Get Started
                     <i class="fa fa-arrow-right ml-2"></i>
                 </a>
-                <a href="#"
+                <a href="#" target="_blank" role="link" aria-label="TailCI Repository"
                     class="inline-flex items-center justify-center px-6 py-3 border border-neutral-300 dark:border-neutral-700 text-base font-medium rounded-lg text-neutral-700 dark:text-neutral-300 bg-white dark:bg-neutral-800 hover:bg-neutral-50 dark:hover:bg-neutral-700 transition duration-200 shadow-lg hover:shadow-xl">
                     Documentation
                     <i class="fa fa-book-open ml-2"></i>
@@ -106,10 +108,10 @@ $this->extend('Layouts/default'); ?>
             <div
                 class="group bg-white dark:bg-neutral-800 rounded-xl shadow-md hover:shadow-xl transition duration-300 p-6 border border-neutral-200 dark:border-neutral-700 relative overflow-hidden">
                 <div
-                    class="absolute inset-0 bg-gradient-to-br from-orange-500/5 to-orange-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    class="absolute inset-0 bg-gradient-to-br from-orange-600/5 to-orange-600/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 </div>
                 <div
-                    class="w-12 h-12 flex items-center justify-center rounded-full bg-orange-100 dark:bg-orange-900/30 text-orange-500 mb-6 relative">
+                    class="w-12 h-12 flex items-center justify-center rounded-full bg-orange-100 dark:bg-orange-900/30 text-orange-600 mb-6 relative">
                     <i class="fa fa-bolt"></i>
                 </div>
                 <h3 class="text-xl font-semibold text-neutral-800 dark:text-neutral-100 mb-3">Lightning Fast
@@ -139,10 +141,10 @@ $this->extend('Layouts/default'); ?>
             <div
                 class="group bg-white dark:bg-neutral-800 rounded-xl shadow-md hover:shadow-xl transition duration-300 p-6 border border-neutral-200 dark:border-neutral-700 relative overflow-hidden">
                 <div
-                    class="absolute inset-0 bg-gradient-to-br from-orange-500/5 to-orange-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    class="absolute inset-0 bg-gradient-to-br from-orange-600/5 to-orange-600/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 </div>
                 <div
-                    class="w-12 h-12 flex items-center justify-center rounded-full bg-orange-100 dark:bg-orange-900/30 text-orange-500 mb-6">
+                    class="w-12 h-12 flex items-center justify-center rounded-full bg-orange-100 dark:bg-orange-900/30 text-orange-600 mb-6">
                     <i class="fa fa-mobile "></i>
 
                 </div>
@@ -173,10 +175,10 @@ $this->extend('Layouts/default'); ?>
             <div
                 class="group bg-white dark:bg-neutral-800 rounded-xl shadow-md hover:shadow-xl transition duration-300 p-6 border border-neutral-200 dark:border-neutral-700 relative overflow-hidden">
                 <div
-                    class="absolute inset-0 bg-gradient-to-br from-orange-500/5 to-orange-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    class="absolute inset-0 bg-gradient-to-br from-orange-600/5 to-orange-600/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 </div>
                 <div
-                    class="w-12 h-12 flex items-center justify-center rounded-full bg-orange-100 dark:bg-orange-900/30 text-orange-500 mb-6">
+                    class="w-12 h-12 flex items-center justify-center rounded-full bg-orange-100 dark:bg-orange-900/30 text-orange-600 mb-6">
                     <i class="fa fa-code"></i>
 
                 </div>
@@ -216,7 +218,7 @@ $this->extend('Layouts/default'); ?>
 
         <div class="relative">
             <div
-                class="absolute left-1/2 top-0 bottom-0 w-1 bg-orange-500/30 dark:bg-orange-500/10 -translate-x-1/2 hidden md:block max-h-[85%]">
+                class="absolute left-1/2 top-0 bottom-0 w-1 bg-orange-600/30 dark:bg-orange-600/10 -translate-x-1/2 hidden md:block max-h-[85%]">
             </div>
 
             <div class="space-y-16">
@@ -225,7 +227,7 @@ $this->extend('Layouts/default'); ?>
                     <div class="flex flex-col md:flex-row items-center">
                         <div class="md:w-1/2 mb-6 md:mb-0 md:pr-12 text-center md:text-right">
                             <span
-                                class="inline-block text-xs font-semibold text-orange-600 dark:text-orange-400 tracking-wider uppercase mb-1">Step
+                                class="inline-block text-xs font-semibold text-orange-600 dark:text-orange-500 tracking-wider uppercase mb-1">Step
                                 One</span>
                             <h3 class="text-2xl font-semibold text-neutral-800 dark:text-neutral-100 mb-3">Quick
                                 Installation</h3>
@@ -235,7 +237,7 @@ $this->extend('Layouts/default'); ?>
                         </div>
 
                         <div
-                            class="absolute left-1/2 top-0 -translate-x-1/2 w-12 h-12 rounded-full bg-orange-500 text-white flex items-center justify-center font-bold z-10 shadow-lg hidden md:flex">
+                            class="absolute left-1/2 top-0 -translate-x-1/2 w-12 h-12 rounded-full bg-orange-600 text-white flex items-center justify-center font-bold z-10 shadow-lg hidden md:flex">
                             1</div>
 
                         <div class="md:w-1/2 md:pl-12">
@@ -262,9 +264,9 @@ npm run build</code></pre>
 
                 <div class="relative">
                     <div class="flex flex-col md:flex-row items-center">
-                        <div class="md:w-1/2 mb-6 md:mb-0 md:pl-12 md:order-2 text-center md:text-left">
+                        <div class="w-full md:w-1/2 mb-6 md:mb-0 md:pl-12 md:order-2 text-center md:text-left">
                             <span
-                                class="inline-block text-xs font-semibold text-orange-600 dark:text-orange-400 tracking-wider uppercase mb-1">Step
+                                class="inline-block text-xs font-semibold text-orange-600 dark:text-orange-500 tracking-wider uppercase mb-1">Step
                                 Two</span>
                             <h3 class="text-2xl font-semibold text-neutral-800 dark:text-neutral-100 mb-3">Configure
                                 Your App</h3>
@@ -274,10 +276,10 @@ npm run build</code></pre>
                         </div>
 
                         <div
-                            class="absolute left-1/2 top-0 -translate-x-1/2 w-12 h-12 rounded-full bg-orange-500 text-white flex items-center justify-center font-bold z-10 shadow-lg hidden md:flex">
+                            class="absolute left-1/2 top-0 -translate-x-1/2 w-12 h-12 rounded-full bg-orange-600 text-white flex items-center justify-center font-bold z-10 shadow-lg hidden md:flex">
                             2</div>
 
-                        <div class="md:w-1/2 md:pr-12 md:order-1">
+                        <div class="w-full md:w-1/2 md:pr-12 md:order-1">
                             <div
                                 class="bg-white dark:bg-neutral-800 rounded-lg p-5 shadow-md border border-neutral-100 dark:border-neutral-700 transform transition-transform hover:scale-105">
                                 <div class="flex items-center mb-3">
@@ -301,9 +303,9 @@ php spark serve</code></pre>
 
                 <div class="relative">
                     <div class="flex flex-col md:flex-row items-center">
-                        <div class="md:w-1/2 mb-6 md:mb-0 md:pr-12 text-center md:text-right">
+                        <div class="w-full md:w-1/2 mb-6 md:mb-0 md:pr-12 text-center md:text-right">
                             <span
-                                class="inline-block text-xs font-semibold text-orange-600 dark:text-orange-400 tracking-wider uppercase mb-1">Step
+                                class="inline-block text-xs font-semibold text-orange-600 dark:text-orange-500 tracking-wider uppercase mb-1">Step
                                 Three</span>
                             <h3 class="text-2xl font-semibold text-neutral-800 dark:text-neutral-100 mb-3">Start
                                 Building</h3>
@@ -313,10 +315,10 @@ php spark serve</code></pre>
                         </div>
 
                         <div
-                            class="absolute left-1/2 top-0 -translate-x-1/2 w-12 h-12 rounded-full bg-orange-500 text-white flex items-center justify-center font-bold z-10 shadow-lg hidden md:flex">
+                            class="absolute left-1/2 top-0 -translate-x-1/2 w-12 h-12 rounded-full bg-orange-600 text-white flex items-center justify-center font-bold z-10 shadow-lg hidden md:flex">
                             3</div>
 
-                        <div class="md:w-1/2 md:pl-12">
+                        <div class="w-full md:w-1/2 md:pl-12">
                             <div
                                 class="bg-white dark:bg-neutral-800 rounded-lg p-5 shadow-md border border-neutral-100 dark:border-neutral-700 transform transition-transform hover:scale-105">
                                 <div class="flex flex-col space-y-4">
@@ -372,7 +374,7 @@ php spark serve</code></pre>
 
                 <div class="relative">
                     <div class="flex flex-col md:flex-row items-center">
-                        <div class="md:w-1/2 md:pr-12">
+                        <div class="w-full md:w-1/2 md:pr-12">
                             <div
                                 class="bg-white dark:bg-neutral-800 rounded-lg p-5 shadow-md border border-neutral-100 dark:border-neutral-700 transform transition-transform hover:scale-105">
                                 <div class="flex flex-col space-y-4">
@@ -398,9 +400,9 @@ php spark serve</code></pre>
                                 </div>
                             </div>
                         </div>
-                        <div class="md:w-1/2 mb-6 md:mb-0 md:pl-12 text-center md:text-left">
+                        <div class="w-full md:w-1/2 mb-6 md:mb-0 md:pl-12 text-center md:text-left">
                             <span
-                                class="inline-block text-xs font-semibold text-orange-600 dark:text-orange-400 tracking-wider uppercase mb-1">Step
+                                class="inline-block text-xs font-semibold text-orange-600 dark:text-orange-500 tracking-wider uppercase mb-1">Step
                                 Five</span>
                             <h3 class="text-2xl font-semibold text-neutral-800 dark:text-neutral-100 mb-3">Maintain &
                                 Scale</h3>
@@ -410,7 +412,7 @@ php spark serve</code></pre>
                         </div>
 
                         <div
-                            class="absolute left-1/2 top-0 -translate-x-1/2 w-12 h-12 rounded-full bg-orange-500 text-white flex items-center justify-center font-bold z-10 shadow-lg hidden md:flex">
+                            class="absolute left-1/2 top-0 -translate-x-1/2 w-12 h-12 rounded-full bg-orange-600 text-white flex items-center justify-center font-bold z-10 shadow-lg hidden md:flex">
                             5</div>
                     </div>
                 </div>
@@ -422,12 +424,14 @@ php spark serve</code></pre>
                 <p class="text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto mb-6">Take part in building modern
                     web applications with TailCI's powerful integration of Tailwind CSS and CodeIgniter.</p>
                 <div class="flex flex-col sm:flex-row justify-center gap-4">
-                    <a href="https://github.com/cojocaru-david/tailCi"
+                    <a href="https://github.com/cojocaru-david/tailCi" target="_blank" role="link"
+                        aria-label="TailCI Repository"
                         class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-orange-600 hover:bg-orange-700 transition-colors">
                         <i class="fas fa-download mr-2 text-white"></i>
                         Download Starter Kit
                     </a>
                     <a href="https://github.com/cojocaru-david/tailCi/tree/master?tab=readme-ov-file#installation"
+                        target="_blank" role="link" aria-label="TailCI Repository"
                         class="inline-flex items-center justify-center px-6 py-3 border border-neutral-300 dark:border-neutral-700 text-base font-medium rounded-md text-neutral-700 dark:text-neutral-300 bg-white dark:bg-neutral-800 hover:bg-neutral-50 dark:hover:bg-neutral-700 transition-colors">
                         <i class="fas fa-book-open mr-2 text-neutral-700 dark:text-neutral-300"></i>
                         Read Documentation
