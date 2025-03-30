@@ -44,7 +44,7 @@ class Exceptions extends BaseConfig
      *
      * Default: APPPATH.'Views/errors'
      */
-    public string $errorViewPath = APPPATH . 'Views/errors';
+    public string $errorViewPath = APPPATH . 'Errors';
 
     /**
      * --------------------------------------------------------------------------

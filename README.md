@@ -1,65 +1,118 @@
 # TailCI - CodeIgniter with Tailwind CSS
 
-TailCI is a minimalist yet powerful web application template that integrates CodeIgniter, a robust PHP framework, with Tailwind CSS, a highly customizable utility-first CSS framework. Designed for developers who value speed, simplicity, and modern aesthetics.
+TailCI is a powerful, developer-friendly web application framework that seamlessly integrates CodeIgniter 4's robust PHP backend with Tailwind CSS's utility-first approach to styling. This combination delivers an optimal development experience for creating modern, responsive web applications with minimal effort.
 
-## Features
+![TailCI](.github/thumb.png)
 
-- Lightweight and fast CodeIgniter core
-- Responsive design powered by Tailwind CSS
-- Easy-to-customize structure
-- Optimized for performance and scalability
+## ✨ Key Features
 
-## Requirements
+### Lightning Fast
 
-- PHP 7.4 or higher (PHP 8.x recommended)
-- Composer (for dependency management)
-- Web server (e.g., Apache, Nginx)
-- Basic knowledge of CodeIgniter and Tailwind CSS
+- Built on CodeIgniter's lightweight framework for optimal performance and speed
+- Minimized build sizes and efficient resource loading
+- Smart caching mechanisms for enhanced response times
 
-## Installation
+### Modern Design
+
+- Styled with Tailwind CSS v4 for a clean, responsive, and customizable interface
+- Dark mode support out of the box
+- Accessibility-focused components and layouts
+
+### Developer Friendly
+
+- Intuitive architecture and well-documented codebase for rapid development
+- Hot module replacement during development
+- Simplified workflow with npm scripts for common tasks
+
+## 📋 Requirements
+
+- PHP 8.1 or higher
+- Composer for PHP dependency management
+- Node.js v20+ and npm for frontend tooling
+- Web server (Apache, Nginx, or built-in PHP server for development)
+- MySQL 5.7+ / MariaDB 10.3+ (or other compatible database)
+- Modern browser support (Chrome, Firefox, Safari, Edge)
+
+## 🚀 Installation
+
+### Quick Start
 
 1. Clone the repository:
+
    ```bash
-   git clone https://github.com/cojocaru-david/tailCI.git
+   git clone https://github.com/cojocaru-david/tailCi.git
+   cd tailCi
    ```
-2. Navigate to the project directory:
-   ```bash
-   cd tailci
-   ```
-3. Install PHP dependencies (if any):
+
+2. Install backend dependencies:
+
    ```bash
    composer install
    ```
-4. Configure your environment:
-   - Copy `application/config/config.php.example` to `application/config/config.php` and update settings (e.g., base URL).
-   - Set up your database in `application/config/database.php`.
-5. Install Tailwind CSS:
-   - Run `npm install` to install dependencies (ensure Node.js is installed).
-   - Build Tailwind: `npx tailwindcss -i ./assets/css/input.css -o ./assets/css/output.css --watch`
-6. Start your web server and visit the project URL.
 
-## Usage
+3. Set up your environment:
 
-- Modify controllers, models, and views in the `application/` folder.
-- Customize styles in `assets/css/input.css` and rebuild Tailwind as needed.
-- Add your own features and logic!
+   ```bash
+   cp env.example .env
+   ```
 
-## Contributing
+   Then edit `.env` to configure your database and application settings.
 
-We welcome contributions! Please follow these steps:
+4. Run database migrations:
 
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/your-feature`).
-3. Commit your changes (`git commit -m "Add your feature"`).
-4. Push to your branch (`git push origin feature/your-feature`).
-5. Open a Pull Request.
+   ```bash
+   php spark migrate
+   ```
 
-## License
+5. Install frontend dependencies and build assets:
+   ```bash
+   npm install
+   npm run build
+   ```
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+### Development Workflow
 
-## Acknowledgments
+Start the development server with hot reloading:
 
-- [CodeIgniter](https://codeigniter.com)
-- [Tailwind CSS](https://tailwindcss.com)
+```bash
+npm run dev
+```
+
+In a separate terminal, run the CodeIgniter server:
+
+```bash
+php spark serve
+```
+
+Visit `http://localhost:8080` to see your application.
+
+## 🤝 Contributing
+
+We welcome contributions to improve TailCI! Here's how you can help:
+
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/amazing-feature`
+3. Commit your changes: `git commit -m 'Add some amazing feature'`
+4. Push to the branch: `git push origin feature/amazing-feature`
+5. Open a Pull Request
+
+Please ensure your code follows our coding standards and includes appropriate tests.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgements
+
+- [CodeIgniter](https://codeigniter.com/) - The powerful PHP framework
+- [Tailwind CSS](https://tailwindcss.com) - Utility-first CSS framework
+- [Node.js](https://nodejs.org/) - JavaScript runtime
 - Built with ❤️ by [Cojocaru David](https://github.com/cojocaru-david)
+
+## 📊 Project Status
+
+TailCI is under active development. We're constantly working to improve and add new features.
+
+---
+
+If you find TailCI helpful, please consider giving it a star on GitHub! ⭐
