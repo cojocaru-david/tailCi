@@ -2,7 +2,7 @@
 
 TailCI is a powerful, developer-friendly web application framework that seamlessly integrates CodeIgniter 4's robust PHP backend with Tailwind CSS's utility-first approach to styling. This combination delivers an optimal development experience for creating modern, responsive web applications with minimal effort.
 
-![TailCI](https://raw.githubusercontent.com/cojocaru-david/tailCi/main/public/assets/img/tailci-logo.png)
+![TailCI](.github/thumb.png)
 
 ## ✨ Key Features
 
