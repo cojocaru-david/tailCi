@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-display: "Work Sans", "sans-serif";
+  --font-sans: "Work Sans", "sans-serif";
+}
+
+@supports (-webkit-backdrop-filter: blur(4px)) or (backdrop-filter: blur(4px)) {
+  .backdrop-blur {
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+  }
+}

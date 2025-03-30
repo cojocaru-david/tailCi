@@ -1,4 +1,4 @@
-<footer class="bg-white dark:bg-neutral-800 border-t border-neutral-200 dark:border-neutral-700">
+<footer class="bg-white dark:bg-neutral-800 border-t border-neutral-200 dark:border-neutral-700 md:rounded-t-[5rem]">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div class="col-span-1 md:col-span-2">
@@ -62,6 +62,8 @@
                     <p>Page rendered in {elapsed_time} seconds using {memory_usage} MB of memory.</p>
                     <p>Environment: <span
                             class="px-2 py-1 rounded bg-neutral-100 dark:bg-neutral-700 font-mono"><?= ENVIRONMENT ?></span>
+                    <p>Version: <span
+                            class="px-2 py-1 rounded bg-neutral-100 dark:bg-neutral-700 font-mono"><?= $version ?></span>
                     </p>
                 </div>
                 <div class="copyrights text-sm text-neutral-500 dark:text-neutral-400 md:text-right">

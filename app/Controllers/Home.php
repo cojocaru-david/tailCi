@@ -6,8 +6,7 @@ class Home extends BaseController
 {
     public function index(): string
     {
-        return view('Pages/index', [
-            'title' => 'Home'
-        ]);
+        $this->view_data['title'] = 'Home';
+        return view('Pages/index', $this->view_data);
     }
 }

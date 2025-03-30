@@ -43,6 +43,9 @@ abstract class BaseController extends Controller
      */
     // protected $session;
 
+    public $version = '1.0.0beta';
+    public $view_data = [];
+
     /**
      * @return void
      */
@@ -50,6 +53,10 @@ abstract class BaseController extends Controller
     {
         // Do Not Edit This Line
         parent::initController($request, $response, $logger);
+
+        $this->view_data = [
+            'version' => $this->version
+        ];
 
         // Preload any models, libraries, etc, here.
 

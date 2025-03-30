@@ -1,7 +1,0 @@
-@import "tailwindcss";
-@custom-variant dark (&:where(.dark, .dark *));
-
-html,
-body {
-  font-family: "Work Sans", sans-serif;
-}

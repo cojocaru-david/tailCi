@@ -25,10 +25,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
-<body class="min-h-screen bg-neutral-50 dark:bg-neutral-900 font-sans flex flex-col">
+<body
+    class="min-h-screen bg-neutral-50 dark:bg-neutral-900 selection:text-white selection:bg-orange-500 font-sans flex flex-col">
     <?= $this->include('Utils/navbar') ?>
 
-    <main class="flex-grow w-full mx-auto py-22">
+    <main class="flex-grow w-full mx-auto">
         <?= $this->renderSection('content') ?>
     </main>
 
@@ -41,13 +42,13 @@
 
                 ws.onopen = () => console.log("LiveReload connected.");
                 ws.onerror = (error) => console.error("LiveReload error:", error);
-                ws.onclose = () => console.warn("LiveReload disconnected.");
+                ws.onclose = () => location.reload();
                 ws.onmessage = () => location.reload();
             })();
         </script>
     <?php endif; ?>
 
-    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/output.js"></script>
     <?= $this->renderSection('footer') ?>
 </body>
 

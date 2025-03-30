@@ -23,7 +23,7 @@
   "license": "MIT",
   "author": "cojocaru-david",
   "scripts": {
-    "dev": "npx concurrently \"npx @tailwindcss/cli -i app/Styles/input.css -o public/assets/css/output.css --watch\" \"nodemon\"",
+    "dev": "npx concurrently \"npx @tailwindcss/cli -i app/Assets/input.css -o public/assets/css/output.css --watch\" \"nodemon\"",
     "build": "npx @tailwindcss/cli -i app/Styles/input.css -o public/output.css --minify"
   },
   "dependencies": {
@@ -34,6 +34,7 @@
     "concurrently": "^9.1.2",
     "dotenv": "^16.4.7",
     "nodemon": "^3.1.9",
+    "terser": "^5.39.0",
     "ws": "^8.18.1"
   }
 }
