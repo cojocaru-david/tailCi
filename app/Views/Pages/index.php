@@ -5,9 +5,9 @@ $this->extend('Layouts/default'); ?>
 <?php $this->section('head'); ?>
 <meta name="description" content="<?= $pageDescription ?>">
 <meta property="og:description" content="<?= $pageDescription ?>">
-<meta property="og:image" content="<?= base_url('assets/img/tailci-social-card.jpg') ?>">
+<meta property="og:image" content="<?= base_url('assets/img/tailci-social-card.png') ?>">
 <meta name="twitter:description" content="<?= $pageDescription ?>">
-<meta name="twitter:image" content="<?= base_url('assets/img/tailci-social-card.jpg') ?>">
+<meta name="twitter:image" content="<?= base_url('assets/img/tailci-social-card.png') ?>">
 <meta name="keywords" content="TailCI, CodeIgniter, Tailwind CSS, Web Development, PHP Framework, Open Source">
 <?php $this->endSection(); ?>
 
