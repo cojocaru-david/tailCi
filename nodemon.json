@@ -1,0 +1,6 @@
+{
+  "watch": ["app/**/*.php"],
+  "ignore": ["public/output.css"],
+  "exec": "node live-reload.js",
+  "ext": "php,css"
+}

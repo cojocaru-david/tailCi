@@ -1,0 +1,39 @@
+{
+  "name": "tailci",
+  "version": "1.0.0",
+  "description": "TailCI is a lightweight, fast, and modern web application built with CodeIgniter and styled with Tailwind CSS. It combines the simplicity of CodeIgniter’s PHP framework with the utility-first power of Tailwind CSS for rapid development and clean design.",
+  "keywords": [
+    "lightweight",
+    "php",
+    "performance",
+    "web-development",
+    "codeigniter",
+    "starter-template",
+    "tailwindcss",
+    "tailci"
+  ],
+  "homepage": "http://tailci.cojocarudavid.me",
+  "bugs": {
+    "url": "https://github.com/cojocaru-david/tailCI/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cojocaru-david/tailCI.git"
+  },
+  "license": "MIT",
+  "author": "cojocaru-david",
+  "scripts": {
+    "dev": "npx concurrently \"npx @tailwindcss/cli -i app/Styles/input.css -o public/assets/css/output.css --watch\" \"nodemon\"",
+    "build": "npx @tailwindcss/cli -i app/Styles/input.css -o public/output.css --minify"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.17",
+    "tailwindcss": "^4.0.17"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "dotenv": "^16.4.7",
+    "nodemon": "^3.1.9",
+    "ws": "^8.18.1"
+  }
+}

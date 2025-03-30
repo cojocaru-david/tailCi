@@ -1,46 +1,47 @@
 # TailCI - CodeIgniter with Tailwind CSS
 
-TailCI is a minimalist yet powerful web application template that integrates CodeIgniter, a robust PHP framework, with Tailwind CSS, a highly customizable utility-first CSS framework. Designed for developers who value speed, simplicity, and modern aesthetics.
+TailCI is a lightweight, fast, and modern web application built with CodeIgniter 4 and styled with Tailwind CSS. It combines the simplicity of CodeIgniter’s PHP framework with the utility-first power of Tailwind CSS for rapid development and clean design.
 
 ## Features
 
-- Lightweight and fast CodeIgniter core
+- Lightweight and fast CodeIgniter 4 core
 - Responsive design powered by Tailwind CSS
 - Easy-to-customize structure
 - Optimized for performance and scalability
 
 ## Requirements
 
-- PHP 7.4 or higher (PHP 8.x recommended)
+- PHP 8.1 or higher
 - Composer (for dependency management)
-- Web server (e.g., Apache, Nginx)
+- Web server (e.g., Apache, NgINX)
 - Basic knowledge of CodeIgniter and Tailwind CSS
 
 ## Installation
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/cojocaru-david/tailCI.git
+   git clone https://github.com/cojocaru-david/tailCi.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd tailci
+   cd tailci4
    ```
-3. Install PHP dependencies (if any):
+3. Install PHP dependencies:
    ```bash
    composer install
    ```
 4. Configure your environment:
-   - Copy `application/config/config.php.example` to `application/config/config.php` and update settings (e.g., base URL).
-   - Set up your database in `application/config/database.php`.
+   - Copy `.env.example` to `.env` and update settings (e.g., base URL).
+   - Set up your database in `.env`.
 5. Install Tailwind CSS:
    - Run `npm install` to install dependencies (ensure Node.js is installed).
-   - Build Tailwind: `npx tailwindcss -i ./assets/css/input.css -o ./assets/css/output.css --watch`
-6. Start your web server and visit the project URL.
+   - Build Tailwind: `npm run build`
+   - Dev server: `npm run dev`
+6. Start your web server (`php .\spark serve`) and visit the project URL.
 
 ## Usage
 
-- Modify controllers, models, and views in the `application/` folder.
+- Modify controllers, models, and views in the `app/` folder.
 - Customize styles in `assets/css/input.css` and rebuild Tailwind as needed.
 - Add your own features and logic!
 
@@ -58,8 +59,8 @@ We welcome contributions! Please follow these steps:
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-## Acknowledgments
+## Acknowledgements
 
-- [CodeIgniter](https://codeigniter.com)
-- [Tailwind CSS](https://tailwindcss.com)
+- [CodeIgniter 4 Documentation](https://codeigniter.com/user_guide/index.html)
+- [Tailwind CSS Official Site](https://tailwindcss.com)
 - Built with ❤️ by [Cojocaru David](https://github.com/cojocaru-david)
