@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "concurrently": "^9.1.2",
-    "dotenv": "^16.4.7",
+    "dotenv": "^16.5.0",
     "nodemon": "^3.1.9",
     "terser": "^5.39.0",
     "ws": "^8.18.1"
