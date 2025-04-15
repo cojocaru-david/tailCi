@@ -53,7 +53,7 @@ TailCI is a powerful, developer-friendly web application framework that seamless
 3. Set up your environment:
 
    ```bash
-   cp env.example .env
+   cp .env.example .env
    ```
 
    Then edit `.env` to configure your database and application settings.
